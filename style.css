@@ -1,0 +1,308 @@
+body {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(0, 0, 0);
+    aspect-ratio: 9/18;
+    height: 70vh;
+    /* Make the border radius responsive */
+    border-radius: calc(70vh * 9 / 18 * 0.1);
+    width: calc(70vh * 9 / 18);
+    max-width: 90vw;
+}
+
+.header-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 90%;
+    padding: 0 1vw;
+}
+
+.header-area > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.25vh;
+    width: 100%;
+}
+
+.camera {
+    height: 1.25vh;
+    width: 1.25vh;
+    border-radius: 50%;
+    background-color: rgba(36, 36, 36, 0.671);
+}
+
+.speaker {
+    height: 1vh;
+    width: 80%;
+    border-radius: 0.625vh;
+    background-color: rgba(36, 36, 36, 0.671);
+}
+
+.right-space {
+    flex: 1;
+    height: 1.25vh;
+    width: 1.25vh;
+}
+
+.screen {
+    height: 85%;
+    width: 95%;
+    border-radius: 1.875vw;
+    background: center / cover no-repeat url("./assets/google-pixel-3a-wallpaper-1.jpg");
+}
+
+.buttons-group {
+    width: 1.25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-group > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.power-button {
+    height: 40%;
+    width: 0.3vw;
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 0.25vw;
+    border-bottom-right-radius: 0.25vw;
+}
+
+.volume-button {
+    height: 95%;
+    width: 0.3vw;
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 0.25vw;
+    border-bottom-right-radius: 0.25vw;
+}
+
+
+/* Screen section */
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: auto;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+/* .material-icons {
+    font-size: calc(70vh * 9 / 18 * 0.04);
+} */
+
+.clock {
+    font-size: calc(70vh * 9 / 18 * 0.04);
+    margin-right: 6px;
+}
+
+.status-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+    gap: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+.status-icons > .material-icons {
+    font-size: calc(70vh * 9 / 18 * 0.04);
+}
+
+/* On a Glance */
+
+.on-a-glance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 14%;
+    width: auto;
+    padding: 0px 10px;
+    font-size: calc(70vh * 9 / 18 * 0.06);
+    /* A text shadow effect like on a glance android widget text */
+    text-shadow: 2px 2px 4px #000000;
+    color: rgba(255, 255, 255, 0.711);
+}
+
+/* Home screen Icons */
+
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 45%;
+    width: auto;
+    padding: 10px 10px;
+}
+
+.home-screen-icons-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    gap: calc(70vh * 9 / 18 * 0.05);
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.home-screen-icon-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(70vh * 9 / 18 * 0.12);
+    width: calc(70vh * 9 / 18 * 0.12);
+    margin-bottom: calc(70vh * 9 / 18 * 0.02);
+    border-radius: 50%;
+    background: white;
+}
+
+/* Bottom Icons */
+
+.bottom-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 15%;
+    width: auto;
+    padding: 0px 10px;
+}
+
+.home-screen-icon-image > img {
+    height: 60%;
+    width: 60%;
+}
+
+/*  Search Bar */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    height: 10%;
+    width: auto;
+    padding: 0px calc(70vh * 9 / 18 * 0.05);;
+    font-size: calc(70vh * 9 / 18 * 0.12);
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    height: 70%;
+    width: 90%;
+    padding: 0px calc(70vh * 9 / 18 * 0.02);;
+    font-size: 10px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.851);
+    background-color: white;
+    box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar-google {
+    width: 5%;
+    aspect-ratio: 1/1;
+    padding: calc(70vh * 9 / 18 * 0.02) 5px;
+    background: center / contain no-repeat url("assets/google-color-icon.webp");
+}
+
+.search-bar-assistant {
+    width: 5%;
+    aspect-ratio: 1/1;
+    padding: calc(70vh * 9 / 18 * 0.02) 5px;
+    background: center / contain no-repeat url("assets/Google_Assistant_logo.png");
+}
+
+/* Navigation Pill */
+
+.navigation-pill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    width: auto;
+    padding: 0px 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.pill {
+    height: 15%;
+    width: 3%;
+    padding: 0px 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.851);
+    background-color: white;
+    box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Background */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,20 @@
+# BebopBits: Project 1 - Pixel 3a Recreation
+
+Welcome to the first project in the BebopBits series, where we embark on a journey to complete 100 coding projects, each offering unique challenges and learning opportunities.
+
+## Pixel 3a Recreation
+
+> The first project in the BebopBits series features a recreation of the Google Pixel 3a, a favorite smartphone among tech enthusiasts. The Pixel 3a, launched in 2019, struck a perfect balance between exceptional performance, stunning camera capabilities, and an affordable price point, quickly becoming a popular choice for smartphone users around the world. This project aims to pay homage to the Pixel 3a's sleek design and user-friendly interface by replicating its appearance using HTML and CSS.
+
+## Technologies Used
+
+- HTML
+- CSS
+
+## Setup
+
+To run this project, simply clone the repository and open the `index.html` file in your preferred web browser.
+
+## License
+
+This project is licensed under the MIT License
