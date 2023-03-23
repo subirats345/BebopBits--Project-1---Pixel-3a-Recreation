@@ -1,6 +1,6 @@
 # BebopBits: Project 1 - Pixel 3a Recreation
 
-![BebopBits: Project 1 - Pixel 3a Recreation](https://github.com/subirats345/BebopBits--Project-1---Pixel-3a-Recreation/blob/main/assets/banner.png)
+![BebopBits: Project 1 - Pixel 3a Recreation](https://raw.githubusercontent.com/subirats345/BebopBits--Project-1---Pixel-3a-Recreation/main/assets/banner.png)
 
 Welcome to the first project in the BebopBits series, where we embark on a journey to complete 100 coding projects, each offering unique challenges and learning opportunities.
 
